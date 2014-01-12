@@ -1,8 +1,8 @@
 require 'rspec'
 require 'bundler/setup'
 require_relative '../db/setup'
-require_relative '../models/automobile'
 
+Dir.glob("./models/**/*.rb").each {|f| require f}
 
 
 

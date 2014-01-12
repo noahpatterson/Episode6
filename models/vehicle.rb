@@ -1,12 +1,10 @@
-require_relative 'vehicle'
-
-class Automobile < Vehicle
+class Vehicle
 
   attr_reader :color, :make, :model, :year
 
-  # def self.num_wheels
-  #   num_wheels = 4
-  # end
+  def self.num_wheels
+    num_wheels = 4
+  end
 
   def update(args={})
     @color = args.fetch(:color) if args[:color]
@@ -14,4 +12,5 @@ class Automobile < Vehicle
     @model = args.fetch(:model) if args[:model]
     @year = args.fetch(:year) if args[:year]
   end
+
 end
