@@ -35,6 +35,10 @@ Panda Assignment
 Tiger Assignment
 ----------------
 
++ need help simplifying the specs with class variables
++ noticed another student used self in the initialize, that would have simplified things
++ added functionality to also update the class variable on each update
+
 1. Create a Vehicle class that automobile inherits from
 2. Create a Motorcycle class that inherits from vehicle
 3. Show the motorcycle class overriding the vehicle's class method for number of tires

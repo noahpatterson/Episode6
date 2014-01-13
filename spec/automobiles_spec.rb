@@ -7,7 +7,7 @@ describe Automobile do
   end
 
   it "should have and set attributes: color, make, model, and year" do
-    car = Automobile.new('bill', color: "blue", make: "Toyota", model: "Prius", year: 2008 )
+    car = Automobile.new(name: 'bill', color: "blue", make: "Toyota", model: "Prius", year: 2008 )
     expect(car.color).to eq('blue')
     expect(car.make).to eq('Toyota')
     expect(car.model).to eq('Prius')
@@ -15,7 +15,7 @@ describe Automobile do
   end
 
   it "should allow you to change attributes" do
-    car = Automobile.new('jerry', color: "blue", make: "Toyota", model: "Prius", year: 2008 )
+    car = Automobile.new(name: 'jerry', color: "blue", make: "Toyota", model: "Prius", year: 2008 )
     expect(car.color).to eq("blue")
     car.update('jerry', color: "yellow")
     expect(car.color).to eq("yellow")
